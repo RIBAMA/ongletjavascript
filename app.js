@@ -8,7 +8,7 @@ var parentContainerTabs = document.querySelectorAll(".parentContainerTab");
     for (var i = 0; i < pcts.length; i++) {
       parentContainerTab = pcts[i];
       (function(pct){
-        tabs = pct.querySelectorAll(".tabs");
+        tabs = pct.querySelector(".tabs");
         console.log("Listes des tabs :" + i + " "+ tabs);
         console.log(tabs);
         (function(_tabs){
