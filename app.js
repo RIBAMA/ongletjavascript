@@ -7,13 +7,19 @@ var parentContainerTabs = document.querySelectorAll(".parentContainerTab");
   (function(){
     for (var i = 0; i < pcts.length; i++) {
       parentContainerTab = pcts[i];
+      console.log("Listes des parents containers :" + i + " "+ parentContainerTab);
+      console.log(parentContainerTab);
       (function(pct){
-        tabs = pct.querySelector(".tabs");
+        var tabs = pct.querySelector(".tabs");
         console.log("Listes des tabs :" + i + " "+ tabs);
         console.log(tabs);
         (function(_tabs){
-          for (var i = 0; i < _tabs.length; i++) {
-            tab = _tabs[i];
+          var anchors = tabs.querySelectorAll("a");
+          for (var i = 0; i < anchors.length; i++) {
+            var anchor = anchors[i];
+            console.log("Listes des anchres :" + i + " "+ anchor);
+            console.log(anchor);
+            anchor.
           }
         })(tabs);
       })(parentContainerTab);
