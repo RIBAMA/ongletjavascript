@@ -21,6 +21,7 @@ html{
     padding: 12px 20px;
     background-color: #f5f4f4;
     transform: scale(3);
+    box-shadow: none;
 }
 .tabs .active{
     text-decoration: none;
