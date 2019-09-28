@@ -1,30 +1,50 @@
-*{
+/* *{
   font-size: 16px;
+} */
+html{
+  color: #7d7673;
 }
 .bodyBox{
-  padding: 40px 60px 0;
+  padding: 80px 60px 0;
+  background-color: #f5f4f4;
 }
 .tabs a{
     text-decoration: none;
     color: #9e837a;
     padding: 12px 20px;
     background-color: #d4cbc8;
+    box-shadow: 0.5px -0.5px 3px #9e837a;
 }
-.tabs a:hover, .tabs .active{
+.tabs a:hover{
     text-decoration: none;
     color: #503d37;
     padding: 12px 20px;
-    background-color: #ece7e6;
+    background-color: #f5f4f4;
     transform: scale(3);
+}
+.tabs .active{
+    text-decoration: none;
+    /* f5f4f4  ece7e6 */
+    color: #503d37;
+    padding: 12px 20px;
+    background-color: #f3eeee;
+    transform: scale(3);
+    box-shadow: none;
 }
 .tabs{
   position: absolute;
 }
 .containtTab{
-  padding: 20px;
+  margin-top: 20px;
+  padding: 40px 20px;
+  /* f5f4f4 */
+  background-color: #f3eeee;
+  box-shadow: inset -1px 1px 3px 0.3px #f3eeee;
 }
+
 .parentContainerTab{
-  margin: 0 0 40px;
+  margin: 0 0 50px;
   padding: 2px;
   position: relative;
+  background-color: rgba(0, 0, 0, 0);
 }
