@@ -1,3 +1,30 @@
-.active{
-  color: red;
+*{
+  font-size: 16px;
+}
+.bodyBox{
+  padding: 40px 60px 0;
+}
+.tabs a{
+    text-decoration: none;
+    color: #9e837a;
+    padding: 12px 20px;
+    background-color: #d4cbc8;
+}
+.tabs a:hover, .tabs .active{
+    text-decoration: none;
+    color: #503d37;
+    padding: 12px 20px;
+    background-color: #ece7e6;
+    transform: scale(3);
+}
+.tabs{
+  position: absolute;
+}
+.containtTab{
+  padding: 20px;
+}
+.parentContainerTab{
+  margin: 0 0 40px;
+  padding: 2px;
+  position: relative;
 }
