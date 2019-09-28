@@ -35,21 +35,9 @@ var parentContainerTabs = document.querySelectorAll(".parentContainerTab");
           console.log(containtTabsArchives);
           console.log("Listes des tabs :" + i + " "+ tabs);
           console.log(tabs);
-          // (function(_tabs, _containtTabs, _containtTabsArchives){
-          //   for (var y = 0; y < _containtTabsArchives.length; y++) {
-          //     var activeAnchor = tabs.querySelector(".active");
-          //     var idContaint = activeAnchor.href.split("#")[1];
-          //     console.log("id reference: " + idContaint + " ancre num: " + y + " => " + activeAnchor);
-          //     console.log(activeAnchor);
-          //     if(_containtTabsArchives[y] != undefined){
-          //       if(_containtTabsArchives[y].id = idContaint){
-          //         console.log("containtTabsArchives num: " + y + " => " + _containtTabsArchives[y]);
-          //         console.log(_containtTabsArchives[y]);
-          //         pct.appendChild(_containtTabsArchives[y]);
-          //       }
-          //     }
-          //   }
-          // })(tabs, containtTabs, containtTabsArchives);
+
+
+
           (function(_tabs, _containtTabs, _containtTabsArchives){
             var anchors = tabs.querySelectorAll("a");
             for (var i = 0; i < anchors.length; i++) {
@@ -59,19 +47,6 @@ var parentContainerTabs = document.querySelectorAll(".parentContainerTab");
   	    			(function(_anchor){
   							console.log("--------*******_containtTabsArchives*******--------*");
   							console.log(_containtTabsArchives);
-  							// for (var y = 0; y < _containtTabsArchives.length; y++) {
-  							// 	var activeAnchor = tabs.querySelector(".active");
-  							// 	var idContaint = activeAnchor.href.split("#")[1];
-  							// 	console.log("id reference: " + idContaint + " ancre num: " + y + " => " + activeAnchor);
-  							// 	console.log(activeAnchor);
-  							// 	if(_containtTabsArchives[y] != undefined){
-                //     if(_containtTabsArchives[y].id = idContaint){
-    						// 			console.log("containtTabsArchives num: " + y + " => " + _containtTabsArchives[y]);
-    						// 			console.log(_containtTabsArchives[y]);
-                //       pct.appendChild(_containtTabsArchives[y]);
-                //     }
-                //   }
-  							// }
 
 
 
@@ -106,7 +81,6 @@ var parentContainerTabs = document.querySelectorAll(".parentContainerTab");
 
 
       })(parentContainerTab);
-      // parentContainerTab.querySelector(".active").classList.remove("active");
     }
   })();
 
